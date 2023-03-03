@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Кнопка смены фона сайта</title>
+	<style>
+		body {
+			background-color: white;
+		}
+	</style>
+	<script>
+		function changeBackground() {
+			var colors = ["red", "green", "blue", "yellow", "pink", "purple","brown"]; // массив доступных цветов
+			var randomColor = colors[Math.floor(Math.random()*colors.length)]; // выбираем случайный цвет из массива
+			document.body.style.backgroundColor = randomColor; // меняем цвет фона
+		}
+	</script>
+</head>
+<body>
+	<button onclick="changeBackground()">Сменить фон</button>
+    <button onclick="this.style.display='none'">Нажми меня</button>
+    <button onclick="alert('Hello World!')">вывод текста</button>
+    <button onclick="location.reload()">Обновить страницу</button>
+</body>
+</html>
